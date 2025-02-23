@@ -1,0 +1,147 @@
+/* Genel Footer Stili */
+footer {
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Footer Top Kısmı */
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Her Bir Bölümün Ortak Stili */
+.footer_top > div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+/* Başlık Stili */
+.footer_top h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer_top h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: #ffc107;
+}
+
+/* Paragraf Stili */
+.footer_top p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+/* Sosyal Medya Butonları */
+.btn_box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn_box button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffc107;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_box button:hover {
+  background: #ffc107;
+  color: #1a1a1a;
+  border-color: #ffc107;
+}
+
+/* İletişim Bilgileri */
+.contact_info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact_info p:first-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+/* Hızlı Bağlantılar */
+.quick_links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick_links ul li {
+  margin-bottom: 0.8rem;
+}
+
+.quick_links ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick_links ul li a:hover {
+  color: #ffc107;
+}
+
+/* Footer Bottom Kısmı */
+.footer_bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2rem;
+}
+
+.footer_bottom a {
+  color: #ffc107;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_bottom a:hover {
+  color: #fff;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .footer_top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_top h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .btn_box {
+    justify-content: center;
+  }
+}

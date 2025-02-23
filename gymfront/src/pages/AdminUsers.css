@@ -1,0 +1,121 @@
+
+.admin_users {
+  padding: 40px;
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.admin_users h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.admin_users table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin_users th,
+.admin_users td {
+  padding: 15px;
+  text-align: left;
+}
+
+.admin_users thead {
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+.admin_users tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.admin_users tbody tr:hover {
+  background: #f5f5f5;
+}
+
+.admin_users tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #3498db;
+}
+
+.button_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: block;
+  width: auto;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+.save_btn {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.cancel_btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.edit_btn {
+  background-color: #f1c40f;
+  color: #fff;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .admin_users {
+    padding: 20px;
+  }
+  
+  .admin_users table {
+    display: block;
+    overflow-x: auto;
+  }
+}

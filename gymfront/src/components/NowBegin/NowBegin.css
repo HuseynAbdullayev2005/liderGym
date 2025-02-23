@@ -1,0 +1,81 @@
+.cta_section {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    background: url("https://themewagon.github.io/training-studio/assets/images/cta-bg.jpg")
+      center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cta_overlay {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    border-radius: 4px;
+  }
+  
+  .cta_overlay h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: red;
+    text-transform: uppercase;
+  }
+  
+  .cta_overlay p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto 30px auto;
+    max-width: 700px;
+  }
+  
+  .cta_button {
+    background-color: #ff5722;
+    border: none;
+    color: #fff;
+    text-align: center;
+    
+    font-size: 16px;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta_button:hover {
+    background-color: #e64a19;
+  }
+  
+  @media (max-width: 768px) {
+    .cta_overlay {
+      padding: 40px 20px;
+    }
+    .cta_overlay h2 {
+      font-size: 28px;
+    }
+    .cta_overlay p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta_overlay h2 {
+      font-size: 22px;
+    }
+    .cta_overlay p {
+      font-size: 13px;
+    }
+    .cta_button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
